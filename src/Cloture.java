@@ -81,15 +81,7 @@ class Cloture {
         int times = 0;
         for(Integer x : coordX) {
             Integer y = coordY.get(times);
-            if (x == 0 || (x == carte.length - 1)) {
-                System.out.println("Votre carte du terrain n'a pas le bon format :");
-                System.out.print("bord extérieur entrant trouvé en position [");
-                System.out.print(x);
-                System.out.print("][");
-                System.out.print(y);
-                System.out.println("]");
-                return;
-            } else if(carte[x-1][y] == 0 || carte[x+1][y] == 0 || carte[x][y+1] == 0 || carte[x][y-1] == 0) {
+            if (x == 0 || (x == carte.length - 1) || carte[x-1][y] == 0 || carte[x+1][y] == 0 || carte[x][y+1] == 0 || carte[x][y-1] == 0) {
                 System.out.println("Votre carte du terrain n'a pas le bon format :");
                 System.out.print("bord extérieur entrant trouvé en position [");
                 System.out.print(x);
