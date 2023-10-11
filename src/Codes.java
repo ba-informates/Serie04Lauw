@@ -1,11 +1,11 @@
-public class Unicode {
+public class Codes {
     public static void main(String[] args) {
-        //System.out.println("Unicode de * : " + String.toH);
-        //System.out.println("Unicode de * : " + Integer.parseInt("9", 16));
-        //System.out.println("Unicode de * : " + Integer.parseInt("W", 16));
-        System.out.println("Caractère correspondant à l'unicode 34 : " + Character.toChars(34));
-        System.out.println("Caractère correspondant à l'unicode 65 : " + Character.toChars(65));
-        System.out.println("Caractère correspondant à l'unicode 123 : " + Character.toChars(123));
+        System.out.println("Unicode de * : " + (int)('*'));
+        System.out.println("Unicode de 9 : " + (int)('9'));
+        System.out.println("Unicode de W : " + (int)('W'));
+        System.out.println("Caractère correspondant à l'unicode 34 : " + (char)(34));
+        System.out.println("Caractère correspondant à l'unicode 65 : " + (char)(65));
+        System.out.println("Caractère correspondant à l'unicode 123 : " + (char)(123));
 
     }
 }

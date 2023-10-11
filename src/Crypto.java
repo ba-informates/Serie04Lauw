@@ -20,7 +20,21 @@ public class Crypto {
         /*******************************************
          * Completez le programme a partir d'ici.
          *******************************************/
-
+        for (int i = 0; i < s.length(); i++) {
+            Character lettre = s.charAt(i);
+            int index = ALPHABET.indexOf(lettre);
+            if (index != -1) {
+                aCoder += lettre;
+                int indexDecal = index + DECALAGE;
+                if (indexDecal >= ALPHABET.length()) {
+                    indexDecal = indexDecal - ALPHABET.length();
+                }
+                chaineCodee += ALPHABET.charAt(indexDecal);
+            } else if (lettre.equals(' ')) {
+                aCoder += ' ';
+                chaineCodee += ' ';
+            }
+        }
         /*******************************************
          * Ne rien modifier apres cette ligne.
          *******************************************/
